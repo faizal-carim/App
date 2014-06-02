@@ -1,0 +1,45 @@
+extends layout
+
+block content
+    <div data-role="header" data-theme="b">
+    h1= "Movie Quiz"
+    </div><!-- /header -->
+    div#challengePopup(data-role='popup', data-theme='b', data-dismissible='false')
+    <!-- div#challengeDeniedPopup(data-role='popup', data-theme='b', data-dismissible='false')-->
+    div#challengeAcceptedDiv(data-theme='b', class="ui-content ui-body-b")
+    div#mainContent(data-role='content', data-theme='b')
+        #addUser
+            p Enter User Information
+            fieldset
+                input#inputUserName(type='text', placeholder='Username', data-role='none', class='ui-input-text ui-shadow-inset ui-corner-all ui-btn-shadow ui-body-b')
+                input#inputUserLocation(type='text', placeholder='Location', data-role='none', class='ui-input-text ui-shadow-inset ui-corner-all ui-btn-shadow ui-body-b')
+                br
+                button#btnAddUser(class='ui-btn ui-shadow ui-btn-corner-all ui-btn-hover-b ui-btn-up-b',  data-role='none', data-wrapperels='span', style='width:100%;height: 40px;') Add User
+   
+    
+        // Wrapper
+        #wrapper
+
+      
+            
+       
+
+            // USER LIST
+            h2#welcomePlayer
+            label#infoLabel(style='font-weight: bold;color: darkslateblue;')
+            #userList
+                table#box-table-a
+                    thead
+                        th UserName
+                        th Location
+                        th Challenge
+                    tbody
+            // /USER LIST
+
+      
+        
+     
+
+        // /WRAPPER
+    div#footer(data-role="footer" data-position="fixed" data-theme="b")
+        h4 Faiz Corp
