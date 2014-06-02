@@ -339,7 +339,8 @@ function addUser(event) {
     }
     else {
         // If errorCount is more than 0, error out
-        alert('Please fill in all fields');
+        //alert('Please fill in all fields');
+		$('#complateAll').html("Please complete all fields");
         return false;
     }
 };
